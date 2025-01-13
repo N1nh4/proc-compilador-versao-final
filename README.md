@@ -29,5 +29,49 @@ estendem até a ocorrência do caracter de fim de linha.
 
 # Regras Sintáticas
 
+- prog ::= `{decl_list_var} {decl_def_proc} `
+
+- decl_list_var ::= `[const] tipo decl_var { , decl_var} `
+
+- decl_def_proc ::= `prot idproc ( [[&] tipo { [ ] } { , [&] tipo { [ ] } }]] ) | 
+def  ( init | idproc ( [ [&] tipo id1{ [( intcon2 | idconst2 )] } { , 
+[&] tipo  id2 { [( intcon2 | idconst2 )] } }] ) ) {decl_list_var} { cmd 
+}  endp `
+
+- decl_var ::= `id [ = ( intcon | realcon | charcon ) ] | 
+id {[ intcon | idconst ]} [ = { (intcon | realcon | charcon ) {, 
+(intcon | realcon | charcon) } } ] `
+
+- tipo ::= `char | int | real | bool `
+
+- cmd ::= `do idproc ( [ expr1 { ,  expr2 }] )   
+| 
+while (expr)  { cmd }  endw  
+| 
+| 
+var id from expr1 (to | dt) expr2 [ by ( intcon | idconst ) ] { cmd }  
+endv 
+if ( expr ) { cmd }{ elif  ( expr ) { cmd } } [ else { cmd }] endi | atrib  
+  | getout 
+ | getint id 
+ | getreal id 
+ | getchar id 
+ | getstr id 
+ | putint ( id | intcon ) 
+ | putreal ( id | realcon ) 
+ | putchar ( id | charcon )  
+ | putstr ( id | stringcon ) `
+
+- atrib ::= `id { [ expr ] } = expr  `
+
+- expr ::= `expr_simp [ op_rel  expr_simp ] `
+
+- expr_simp ::= `[+ | – ] termo {(+ | – | ||) termo}`
+
+- termo ::= `fator {(* | / | &&)  fator} `
+
+- fator ::= `id { [ expr ] }  | intcon | realcon | charcon |  ( expr )  | ! fator `
+
+- op_rel ::= `== | != | <= | < | >= | >`
 
  
