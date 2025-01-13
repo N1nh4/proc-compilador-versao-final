@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "string.h": "c",
+        "stdbool.h": "c",
+        "stdlib.h": "c",
+        "funcaux.h": "c",
+        "tabelasimbolos.h": "c",
+        "analisadorsintatico.h": "c",
+        "TESTE.C": "cpp",
+        "analisadorlexico.h": "c"
+    }
+}

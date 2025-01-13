@@ -1,0 +1,45 @@
+const int dado = 6
+const int dedo = 2, a = 7
+const real l = 1.1
+char hugos = 'o'
+
+real hugo 
+int vv
+int h = 55
+const char w = 'a'
+
+const int matriz[2] = { 2, 5 }
+
+int matrizerrada[1]
+    
+
+prot teste(int)
+
+def teste(int qualquer[2][3], int qualquers[1], int qualquerz[10][11], & int q )
+    const int r = 20
+endp
+
+
+def init
+   const int p = 2
+   const int r = 50
+   int c[2]
+   int vetores[5]
+   int vetor[a]
+   int fat,n,z
+   char testre
+   getint n
+   if (n <= 1)
+        fat = 1
+    else
+        fat = n 
+        z = n
+        while (z > a[2])
+            z = z - 1
+           
+            
+        endw
+    endi
+
+    a = b[2] + 3
+endp
