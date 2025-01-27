@@ -76,5 +76,6 @@ if ( expr ) { cmd }{ elif  ( expr ) { cmd } } [ else { cmd }] endi | atrib
 
 
 gcc *.c -o main.exe
+
 ./main
  
