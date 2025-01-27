@@ -74,4 +74,7 @@ if ( expr ) { cmd }{ elif  ( expr ) { cmd } } [ else { cmd }] endi | atrib
 
 - op_rel ::= `== | != | <= | < | >= | >`
 
+
+gcc *.c -o main.exe
+./main
  
